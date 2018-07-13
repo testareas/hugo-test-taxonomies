@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <h1>Single template (_default)</h1>
+  <h2>{{ .Title }}</h2>
+  <time>{{ .Date.Format "January 2006" }}</time>
+  <hr>
+  {{ .Content }}
+  <hr>
+  <!--b>Mood</b>
+  {{ range .Params.mood }}
+    <a href="{{ "/mood/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+  <hr-->
+  <b>Destination</b>
+  {{ range .Params.destination }}
+    <a href="{{ "/destination/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+  {{ end }}
+  <hr>
+    {{ .Params.featured_image }}
+  <hr>
+{{ end }}

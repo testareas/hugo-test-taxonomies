@@ -1,0 +1,40 @@
+body{
+  font: 1em arial;
+}
+
+h1{
+  color: orange;
+}
+
+h2{
+  color: blue;
+}
+
+header,
+footer{
+  background-color: #f1f1f1;
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+main{
+  padding: 1em 0;
+  float: left;
+}
+
+nav ul li{
+  margin-right: 1em;
+  float: left;
+  list-style: none;
+}
+
+.active{
+  background-color: aqua;
+}
+
+.pagination{
+  background-color: #efefef;
+  padding: 1em;
+  display: inline-flex;
+}

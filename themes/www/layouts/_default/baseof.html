@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }} - {{ .Title }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+  </head>
+  <body>
+    {{ partial "header" . }}
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer" . }}
+  </body>
+</html>

@@ -1,0 +1,28 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My Site"
+theme = "www"
+sectionPagesMenu = "main"
+paginate= "1"
+
+[params]
+  siteTwitter = "siteTwitter"
+  siteFacebook = "siteFacebook"
+  siteInstagram = "siteInstagram"
+
+  [taxonomies]
+   destination = "destination"
+
+  [permalinks]
+   destinations = "/blog/destination/:slug/"
+
+
+
+
+##  [taxonomies]
+##    mood = "mood"
+##    destination = "destination"
+
+##  [permalinks]
+##    moods = "/:slug/"
+##    destinations = "/blog/destination/:slug/"
